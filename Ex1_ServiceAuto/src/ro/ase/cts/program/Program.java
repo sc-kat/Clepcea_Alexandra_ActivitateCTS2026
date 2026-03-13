@@ -23,10 +23,15 @@ public class Program {
         AMasina masina3 = FabricaMasini.getInstance().getMasina(TipMasina.VAN, "B25DFG", "Vanetta");
         AMasina masina4 = FabricaMasini.getInstance().getMasina(TipMasina.WAGON, "CT345SDA", "Wagonetta");
 
-        System.out.println("Masina 1: " + masina1);
-        System.out.println("Masina 2: " + masina2);
-        System.out.println("Masina 3: " + masina3);
-        System.out.println("Masina 4: " + masina4);
+//        System.out.println("Masina 1: " + masina1);
+//        System.out.println("Masina 2: " + masina2);
+//        System.out.println("Masina 3: " + masina3);
+//        System.out.println("Masina 4: " + masina4);
+
+        serviceAuto.intrareInService(masina1);
+        serviceAuto2.intrareInService(masina2);
+        serviceAuto2.iesireDinService();
+        serviceAuto.intrareInService(masina3);
 
     }
 }
