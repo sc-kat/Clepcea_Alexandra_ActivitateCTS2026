@@ -1,4 +1,4 @@
-package dp.structurale.proxy.ex3;
+package dp.structurale.proxy.ex3_spital;
 
 public class SpitalProxy implements ISpital {
     private Spital spital;

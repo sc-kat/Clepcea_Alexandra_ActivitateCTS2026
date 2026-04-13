@@ -1,4 +1,4 @@
-package dp.structurale.proxy.ex3;
+package dp.structurale.proxy.ex3_spital;
 
 public class Program {
     public static void main(String[] args) {

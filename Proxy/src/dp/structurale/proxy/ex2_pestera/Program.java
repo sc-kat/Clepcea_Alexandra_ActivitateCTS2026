@@ -1,4 +1,4 @@
-package dp.structurale.proxy.ex2;
+package dp.structurale.proxy.ex2_pestera;
 
 public class Program {
     public static void main(String[] args) {

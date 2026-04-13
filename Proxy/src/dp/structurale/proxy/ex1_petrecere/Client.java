@@ -1,4 +1,4 @@
-package dp.structurale.proxy.ex1;
+package dp.structurale.proxy.ex1_petrecere;
 
 public class Client {
     private String nume;

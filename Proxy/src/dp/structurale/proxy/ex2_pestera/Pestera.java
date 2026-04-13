@@ -1,4 +1,4 @@
-package dp.structurale.proxy.ex2;
+package dp.structurale.proxy.ex2_pestera;
 
 public class Pestera implements IPestera {
 

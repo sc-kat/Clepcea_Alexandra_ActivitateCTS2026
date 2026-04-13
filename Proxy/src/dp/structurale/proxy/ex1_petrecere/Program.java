@@ -1,6 +1,4 @@
-package dp.structurale.proxy.ex1;
-
-import java.lang.ref.Cleaner;
+package dp.structurale.proxy.ex1_petrecere;
 
 public class Program {
     public static void main(String[] args) {

@@ -1,6 +1,4 @@
-package dp.structurale.proxy.ex2;
-
-import dp.structurale.proxy.ex1.IPetrecere;
+package dp.structurale.proxy.ex2_pestera;
 
 public class PesteraProxy implements IPestera {
     private Pestera pestera;
