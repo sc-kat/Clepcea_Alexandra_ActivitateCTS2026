@@ -3,10 +3,10 @@ package proxy.S1.implementare;
 import java.util.ArrayList;
 
 public class ProxySpital implements ISpital {
-    private Spital spital;
+    private ISpital spital;
     private ArrayList<Vizitator> listaAsteptare;
 
-    public ProxySpital(Spital spital) {
+    public ProxySpital(ISpital spital) {
         this.spital = spital;
         this.listaAsteptare = new ArrayList<>();
     }
@@ -29,12 +29,14 @@ public class ProxySpital implements ISpital {
                 vizitator1.setEsteEchipat(true);
                 System.out.println("Vizitatorul " + vizitator1.getNume() + " a fost echipat.");
                 spital.permiteAcces(vizitator1);
-
-                listaAsteptare.clear();
             });
+            listaAsteptare.clear();
         } else {
             System.out.println("Accesul nu este permis in spital, sunt prea putini vizitatori in sala de asteptare.");
         }
+
     }
+
+
 
 }

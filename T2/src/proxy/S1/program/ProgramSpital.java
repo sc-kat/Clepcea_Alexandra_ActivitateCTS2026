@@ -1,12 +1,13 @@
 package proxy.S1.program;
 
+import proxy.S1.implementare.ISpital;
 import proxy.S1.implementare.ProxySpital;
 import proxy.S1.implementare.Spital;
 import proxy.S1.implementare.Vizitator;
 
 public class ProgramSpital {
     public static void main(String[] args) {
-        ProxySpital spital = new ProxySpital(new Spital());
+        ISpital spital = new ProxySpital(new Spital());
 
 
         Vizitator vizitator1 = new Vizitator("Ion", true, true);
