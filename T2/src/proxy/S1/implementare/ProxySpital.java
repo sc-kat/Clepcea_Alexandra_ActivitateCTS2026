@@ -29,6 +29,8 @@ public class ProxySpital implements ISpital {
                 vizitator1.setEsteEchipat(true);
                 System.out.println("Vizitatorul " + vizitator1.getNume() + " a fost echipat.");
                 spital.permiteAcces(vizitator1);
+
+                listaAsteptare.clear();
             });
         } else {
             System.out.println("Accesul nu este permis in spital, sunt prea putini vizitatori in sala de asteptare.");
