@@ -11,10 +11,7 @@ public class Program {
         Produs p3 = new Produs("Telefon", 4500, true);
         Produs p4 = new Produs("Ceas", 2600, false);
 
-        Utilizator utilizator = new Utilizator("Andrei", null);
-        utilizator.setStrategieVizualizare(new VizualizarePretCrescator());
-//        utilizator.setStrategieVizualizare(new VizualizarePretDescrescator());
-//        utilizator.setStrategieVizualizare(new VizualizareProduseCuRecenzii());
+        Utilizator utilizator = new Utilizator("Andrei");
 
         ArrayList<Produs> produse = new ArrayList<>();
         produse.add(p1);
@@ -22,6 +19,15 @@ public class Program {
         produse.add(p3);
         produse.add(p4);
 
-        System.out.println(utilizator.aplicareStrategieProduse(produse));
+        utilizator.setStrategieVizualizare(new VizualizarePretCrescator());
+        System.out.println("Pret crescator: " + utilizator.aplicareStrategieProduse(produse));
+
+        utilizator.setStrategieVizualizare(new VizualizarePretDescrescator());
+        System.out.println("Pret descrescator: " +utilizator.aplicareStrategieProduse(produse));
+
+        utilizator.setStrategieVizualizare(new VizualizareProduseCuRecenzii());
+        System.out.println("Produse cu recenzie: " + utilizator.aplicareStrategieProduse(produse));
+
+
     }
 }

@@ -8,9 +8,9 @@ public class Utilizator {
 //    private ArrayList<Produs> listaProduse;
 
 
-    public Utilizator(String nume, IVizualizareProduse strategieVizualizare) {
+    public Utilizator(String nume) {
         this.nume = nume;
-        this.strategieVizualizare = strategieVizualizare;
+
     }
 
     public void setStrategieVizualizare(IVizualizareProduse strategieVizualizare) {
