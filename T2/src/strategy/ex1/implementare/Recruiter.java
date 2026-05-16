@@ -3,7 +3,7 @@ package strategy.ex1.implementare;
 import java.util.ArrayList;
 
 public class Recruiter {
-    IMetodaDeEvaluare metodaDeEvaluare;
+    private IMetodaDeEvaluare metodaDeEvaluare;
 
     public void setMetodaDeEvaluare(IMetodaDeEvaluare metodaDeEvaluare) {
         this.metodaDeEvaluare = metodaDeEvaluare;
